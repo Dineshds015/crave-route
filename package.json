@@ -1,0 +1,30 @@
+{
+  "name": "crave-route",
+  "version": "1.0.0",
+  "description": "CraveRoute — A Distinctive Food Order Management System with Kitchen Journey SSE",
+  "scripts": {
+    "dev": "concurrently -n \"backend,frontend\" -c \"green,cyan\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "seed": "npm --prefix backend run seed",
+    "test:backend": "npm --prefix backend run test",
+    "test:frontend": "npm --prefix frontend run test",
+    "test": "npm run test:backend && npm run test:frontend",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix frontend run build",
+    "build": "npm run build:backend && npm run build:frontend"
+  },
+  "keywords": [
+    "nextjs",
+    "express",
+    "mongodb",
+    "sse",
+    "food-ordering",
+    "state-machine"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
